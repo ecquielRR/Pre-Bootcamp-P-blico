@@ -1,2 +1,2 @@
-# Pre-Bootcamp-P-blico
+# Pre-Bootcamp-Publico
 Archivos publicados para todos los de forge
