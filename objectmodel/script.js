@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             comentarioItem.classList.add('comentario-item');
             comentarioItem.textContent = comentarioTexto;
             comentariosLista.appendChild(comentarioItem);
-            textoComentarioInput.value = ''; // Limpiar el input
+            textoComentarioInput.value = '';
         }
     });
 
