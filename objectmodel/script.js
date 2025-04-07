@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const enviarComentarioButton = document.getElementById('enviar-comentario');
-    const textoComentarioInput = document.getElementById('texto-comentario');
-    const comentariosLista = document.getElementById('comentarios-lista');
-    const likeButtons = document.querySelectorAll('.like-button');
+    const enviarComentarioButton = document.querySelector('#enviar-comentario');
+    const textoComentarioInput = document.querySelector('#texto-comentario');
+    const comentariosLista = document.querySelector('#comentarios-lista');
+    const likeButtons = document.querySelectorAll('.like-button'); 
 
     enviarComentarioButton.addEventListener('click', function() {
         const comentarioTexto = textoComentarioInput.value.trim();
@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
             comentarioItem.classList.add('comentario-item');
             comentarioItem.textContent = comentarioTexto;
             comentariosLista.appendChild(comentarioItem);
-            textoComentarioInput.value = ''; // Limpiar el input
+            textoComentarioInput.value = '';
         }
     });
+
 
     likeButtons.forEach(button => {
         button.addEventListener('click', function() {
